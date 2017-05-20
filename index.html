@@ -5,17 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 101 Template</title>
+    <title>Dicleym app</title>
 
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style-aditional.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Atención a clientes</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Aviso de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Bolsa de trabajo</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
     <div class="jumbotron">
       <div class="container">
-          <h1>Hello, world!</h1>
+          <h1>Bienvenidos</h1>
+          <p>Eliga una de las opciones</p>
       </div>
     </div>
+
+    <div class="index-btn">        
+        <a class="btn btn-primary col-xs-12" href="servicios.html" role="button">
+            <div class="col-xs-3">
+                <img src="img/icons/doctor.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
+            </div>
+            <div class="col-xs-9 pull-left">
+                <h1>Servicios</h1>    
+            </div> 
+        </a>
+        <br><br><br><br><br><br>
+        <a class="btn btn-primary col-xs-12" href="servicios.html" role="button">
+            <div class="col-xs-3">
+                <img src="img/icons/medical cap.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
+            </div>
+            <div class="col-xs-9 pull-left">
+                <h1>Guardias</h1>    
+            </div> 
+        </a>
+        </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
