@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dicleym app</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style-aditional.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Atención a clientes</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Aviso de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Bolsa de trabajo</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<div class="container">
+ <div class="row">
+  <div class="process">
+   <div class="process-row nav nav-tabs">
+    <div class="process-step">
+     <button type="button" class="btn btn-info btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-map fa-3x"></i></button>
+     <p>Dirección</p>
+    </div>
+    <div class="process-step">
+     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-calendar fa-3x"></i></button>
+     <p>Calendario</p>
+    </div>
+    <div class="process-step">
+     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu4"><i class="fa fa-credit-card fa-3x"></i></button>
+     <p>Forma de pago</p>
+    </div>
+    <div class="process-step">
+     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu5"><i class="fa fa-check fa-3x"></i></button>
+     <p>Confirmar</p>
+    </div>
+   </div>
+  </div>
+
+  <!-- Menus ocultos -->
+  <div class="tab-content">
+   <div id="menu1" class="tab-pane fade active in">
+    <div class="container">
+
+        <div class="row">
+        <div class="container">
+            <h2>Datos de contacto</h2>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">Datos de contacto</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                         <form>
+                                <!-- full-name input-->
+                                <div class="form-group">
+                                    <label class="control-label">Nombre completo</label>
+                                    <div class="controls">
+                                        <input id="full-name" name="full-name" type="text" placeholder="full name"
+                                        class="form-control">
+                                        <p class="help-block">Nombre completo del paciente</p>
+                                    </div>
+                                </div>
+                                <!-- address-line1 input-->
+                                <div class="form-group">
+                                    <label class="control-label">Edad</label>
+                                    <div class="controls">
+                                        <input id="address-line1" name="address-line1" type="text" placeholder="Calle y número"
+                                        class="form-control">
+                                    </div>
+                                </div>
+                                <!-- address-line2 input-->
+                                <div class="form-group">
+                                    <label class="control-label">Genero</label>
+                                    <div class="controls">
+                                        <input id="address-line2" name="address-line2" type="text" placeholder="Colonia"
+                                        class="form-control">
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox"> Guardar esta dirección
+                                    </label>
+                                  </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Dirección</a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                         <a href="#" class="btn btn-danger" style="width: 100%;" data-toggle="modal" data-target="#googleMap"> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Usar su ubicación actual</a>
+                         <form>
+                                <!-- address-line1 input-->
+                                <div class="form-group">
+                                    <label class="control-label">Calle y número</label>
+                                    <div class="controls">
+                                        <input id="address-line1" name="address-line1" type="text" placeholder="Calle y número"
+                                        class="form-control">
+                                    </div>
+                                </div>
+                                <!-- address-line2 input-->
+                                <div class="form-group">
+                                    <label class="control-label">Colonia</label>
+                                    <div class="controls">
+                                        <input id="address-line2" name="address-line2" type="text" placeholder="Colonia"
+                                        class="form-control">
+                                    </div>
+                                </div>
+                                <!-- city input-->
+                                <div class="form-group">
+                                    <label class="control-label">Ciudad</label>
+                                    <div class="controls">
+                                        <input id="city" name="city" type="text" placeholder="Ciudad" class="form-control">
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <!-- postal-code input-->
+                                <div class="form-group">
+                                    <label class="control-label">Código postal</label>
+                                    <div class="controls">
+                                        <input id="postal-code" name="postal-code" type="text" placeholder="Código postal"
+                                        class="form-control">
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox"> Guardar esta dirección
+                                    </label>
+                                  </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                        
+        </div>
+        </div>
+
+        <ul class="list-unstyled list-inline pull-right">
+     <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i> Back</button></li>
+     <li><button type="button" class="btn btn-info next-step">Next <i class="fa fa-chevron-right"></i></button></li>
+    </ul>
+    </div>
+   </div>
+
+
+
+   <div id="menu2" class="tab-pane fade">
+    <h3>Menu 2</h3>
+    <p>Some content in menu 2.</p>
+    <ul class="list-unstyled list-inline pull-right">
+     <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i> Back</button></li>
+     <li><button type="button" class="btn btn-info next-step">Next <i class="fa fa-chevron-right"></i></button></li>
+    </ul>
+   </div>
+   <div id="menu3" class="tab-pane fade">
+    <h3>Menu 3</h3>
+    <p>Some content in menu 3.</p>
+    <ul class="list-unstyled list-inline pull-right">
+     <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i> Back</button></li>
+     <li><button type="button" class="btn btn-info next-step">Next <i class="fa fa-chevron-right"></i></button></li>
+    </ul>
+   </div>
+   <div id="menu4" class="tab-pane fade">
+    <h3>Menu 4</h3>
+    <p>Some content in menu 4.</p>
+    <ul class="list-unstyled list-inline pull-right">
+     <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i> Back</button></li>
+     <li><button type="button" class="btn btn-info next-step">Next <i class="fa fa-chevron-right"></i></button></li>
+    </ul>
+   </div>
+   <div id="menu5" class="tab-pane fade">
+    <h3>Menu 5</h3>
+    <p>Some content in menu 5.</p>
+    <ul class="list-unstyled list-inline pull-right">
+     <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i> Back</button></li>
+     <li><button type="button" class="btn btn-success"><i class="fa fa-check"></i> Done!</button></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+<!-- Modal -->
+        <div class="modal fade" id="googleMap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"> Ubicación actual</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6047.412375125233!2d-100.32128809011787!3d25.6774958487074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866295db2d65314d%3A0xfa0c0ee7a9f0a16f!2sCentro%2C+64000+Monterrey%2C+N.L.!5e0!3m2!1ses-419!2smx!4v1495342369862" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+
+            </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Confirmar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/compra.js"></script>
+</body>
+</html>
