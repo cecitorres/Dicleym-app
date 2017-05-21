@@ -9,161 +9,224 @@
 
     <!-- Bootstrap <--></-->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="css/style-aditional.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">
-            <img alt="Brand" src="...">
-          </a>
-        </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Servicios <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-        </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Atención a clientes</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Aviso de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Bolsa de trabajo</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
     <div class="container-fluid">
-      <div class="row">
-          <div class="servicio center-block" id="toma_signos_vitales">
+      <div class="row"><!-- 
+      <div class="col-xs-12">
+        <h3>Seleccione los servicios que necesite.</h3>        
+      </div> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Toma de signos vitales</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere accumsan cursus.</p>               
+
+                <span class="label label-success">$70</span>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Ministración de medicamentos</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere accumsan cursus.</p>               
+
+                <span class="label label-success">$75</span>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="container">
+            <h3>Seleccione los servicios que necesite.</h3>
+          </div>
+
+          <div class="servicio-1 center-block" id="toma_signos_vitales" data-toggle="modal" data-target="#myModal">
             <div class="col-xs-3">
                 <img src="img/icons/heart beat.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
-            <div class="col-xs-9">
-                <h3>Toma de signos vitales $70</h3>    
-            </div>            
+            <div class="col-xs-9 ">
+                <h3>Toma de signos vitales </h3>    
+            </div>
+            <div class="info-servicio"></div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+
+          <div class="servicio-2 center-block" id="toma_signos_vitales" data-toggle="modal" data-target="#myModal2">
             <div class="col-xs-3">
                 <img src="img/icons/tablets.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Ministración de medicamentos $75</h3>    
+                <h3>Ministración de medicamentos</h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-1 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/medicine bottle.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Control de glucemia $45</h3>    
+                <h3>Control de glucemia </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-2 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/bandage.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Curaciones menores $100</h3>    
+                <h3>Curaciones menores </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-1 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/medicine bowl.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Curaciones mayores $200</h3>    
+                <h3>Curaciones mayores </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-2 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/patient.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Retiro de puntos $70</h3>    
+                <h3>Retiro de puntos </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-1 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/dropper.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Lavado ótico $50</h3>    
+                <h3>Lavado ótico </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-2 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/eye.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Lavado oftálmico $50</h3>    
+                <h3>Lavado oftálmico </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-1 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/patient 2.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Baño de paciente $150</h3>    
+                <h3>Baño de paciente </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-2 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/medicine box 2.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Aplicación de Sonda foley $150</h3>    
+                <h3>Aplicación de Sonda foley </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-1 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/medicine box.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Retiro de Sonda foley $50</h3>    
+                <h3>Retiro de Sonda foley </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-2 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/medicine box 2.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Aplicación de Sonda nasogástrica $150</h3>    
+                <h3>Aplicación de Sonda nasogástrica </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-1 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/medicine box.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Retiro de Sonda nasogástrica $50</h3>    
+                <h3>Retiro de Sonda nasogástrica </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-2 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/medicine box 2.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Cambio de bolsa de colostomía $70</h3>    
+                <h3>Cambio de bolsa de colostomía </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-1 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/medicine box.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Aplicación de enemas $70</h3>    
+                <h3>Aplicación de enemas </h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-2 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/patient 2.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Aspiración de secreciones $70</h3>    
+                <h3>Aspiración de secreciones</h3>    
             </div>            
           </div>
-          <div class="servicio center-block" id="toma_signos_vitales">
+          <div class="servicio-1 center-block" id="toma_signos_vitales">
             <div class="col-xs-3">
                 <img src="img/icons/medicine drop.png" alt="" class="img-responsive servicio-logo" alt="Responsive image">
             </div>
             <div class="col-xs-9">
-                <h3>Diálisis $400</h3>    
+                <h3>Diálisis</h3>    
             </div>            
           </div>
           
