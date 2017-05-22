@@ -122,7 +122,7 @@
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Dirección</a>
                     </h4>
                 </div>
-                <div id="collapseTwo" class="panel-collapse collapse">
+                <div id="collapseTwo" class="panel-collapse collapse in">
                     <div class="panel-body">
                          <a href="#" class="btn btn-danger" style="width: 100%;" data-toggle="modal" data-target="#googleMap"> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Usar su ubicación actual</a>
                          <form>
@@ -200,7 +200,7 @@
             <div class="panel panel-default credit-card-box">
                 <div class="panel-heading display-table" >
                     <div class="row display-tr" >
-                        <h3 class="panel-title display-td" >Payment Details</h3>
+                        <h3 class="panel-title display-td" >Forma de pago</h3>
                         <div class="display-td" >                            
                             <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
                         </div>
@@ -211,7 +211,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="form-group">
-                                    <label for="cardNumber">CARD NUMBER</label>
+                                    <label for="cardNumber">Número de tarjeta</label>
                                     <div class="input-group">
                                         <input 
                                             type="tel"
@@ -229,7 +229,7 @@
                         <div class="row">
                             <div class="col-xs-7 col-md-7">
                                 <div class="form-group">
-                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span>Caducidad</label>
                                     <input 
                                         type="tel" 
                                         class="form-control" 
@@ -242,7 +242,7 @@
                             </div>
                             <div class="col-xs-5 col-md-5 pull-right">
                                 <div class="form-group">
-                                    <label for="cardCVC">CV CODE</label>
+                                    <label for="cardCVC">Código de seguridad</label>
                                     <input 
                                         type="tel" 
                                         class="form-control"
@@ -254,24 +254,37 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Pagar en efectivo
+                            </label>
+                        </div>
+
                         <div class="row">
-                            <div class="col-xs-12">
-                                <div class="form-group">
-                                    <label for="couponCode">COUPON CODE</label>
-                                    <input type="text" class="form-control" name="couponCode" />
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseCupon">Cupon</a>
+                                </h4>
+                            </div>
+                            <div id="collapseCupon" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="couponCode">Ingrese su código de cupon</label>
+                                            <input type="text" class="form-control" name="couponCode" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <button class="subscribe btn btn-success btn-md btn-block" type="button">Validar cupon</button>
+                                    </div>
                                 </div>
-                            </div>                        
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <button class="subscribe btn btn-success btn-md btn-block" type="button">Validar cupon</button>
                             </div>
+                        </div>                       
                         </div>
-                        <div class="row" style="display:none;">
-                            <div class="col-xs-12">
-                                <p class="payment-errors"></p>
-                            </div>
-                        </div>
+
                     </form>
                 </div>
             </div>            
