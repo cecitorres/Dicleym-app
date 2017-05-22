@@ -113,3 +113,9 @@
 }
 
 .star-rating .fa-star{color: yellow;}
+
+/*checkout*/
+
+.navbar-brand img {
+  width: 40px;
+}
