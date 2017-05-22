@@ -4,9 +4,9 @@
   "description": "Servicio de atención de enfermería a domicilio desde una App",
   "icons": [
     {
-      "src": "img/logo-144.jpeg",
-      "sizes": "144x144",
-      "type": "image/jpeg"
+      "src": "img/logo-300.png",
+      "sizes": "300x300",
+      "type": "image/png"
     }
   ],
   "start_url": "index.html",
