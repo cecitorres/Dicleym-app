@@ -1,0 +1,17 @@
+{
+  "short_name": "Dicleym",
+  "name": "Dicleym app",
+  "description": "Servicio de atención de enfermería a domicilio desde una App",
+  "icons": [
+    {
+      "src": "img/logo-144.jpeg",
+      "sizes": "144x144",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#29BDBB",
+  "background_color": "#29BDBB"
+}
