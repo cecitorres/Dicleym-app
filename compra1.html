@@ -85,7 +85,7 @@
                                 <div class="form-group">
                                     <label class="control-label">Nombre completo</label>
                                     <div class="controls">
-                                        <input id="full-name" name="full-name" type="text" placeholder="full name"
+                                        <input id="full-name" name="full-name" type="text" placeholder=""
                                         class="form-control">
                                         <p class="help-block">Nombre completo del paciente</p>
                                     </div>
@@ -94,7 +94,7 @@
                                 <div class="form-group">
                                     <label class="control-label">Edad</label>
                                     <div class="controls">
-                                        <input id="address-line1" name="address-line1" type="text" placeholder="Calle y número"
+                                        <input id="address-line1" name="address-line1" type="text" placeholder=""
                                         class="form-control">
                                     </div>
                                 </div>
@@ -102,15 +102,10 @@
                                 <div class="form-group">
                                     <label class="control-label">Genero</label>
                                     <div class="controls">
-                                        <input id="address-line2" name="address-line2" type="text" placeholder="Colonia"
+                                        <input id="address-line2" name="address-line2" type="text" placeholder=""
                                         class="form-control">
                                     </div>
                                 </div>
-                                <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox"> Guardar esta dirección
-                                    </label>
-                                  </div>
                         </form>
                     </div>
                 </div>
@@ -125,6 +120,7 @@
                 <div id="collapseTwo" class="panel-collapse collapse in">
                     <div class="panel-body">
                          <a href="#" class="btn btn-danger" style="width: 100%;" data-toggle="modal" data-target="#googleMap"> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Usar su ubicación actual</a>
+                         <br>
                          <form>
                                 <!-- address-line1 input-->
                                 <div class="form-group">
@@ -417,7 +413,7 @@
 
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Confirmar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
               </div>
             </div>
