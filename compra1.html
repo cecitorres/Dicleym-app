@@ -50,11 +50,11 @@
     </div>
     <div class="process-step">
      <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-calendar fa-3x"></i></button>
-     <p>Calendario</p>
+     <p>Fecha</p>
     </div>
     <div class="process-step">
      <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu3"><i class="fa fa-credit-card fa-3x"></i></button>
-     <p>Forma de pago</p>
+     <p>Pago</p>
     </div>
     <div class="process-step">
      <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu4"><i class="fa fa-check fa-3x"></i></button>
@@ -69,103 +69,104 @@
     <div class="container">
 
         <div class="row">
-        <div class="container">
-            <h2>Datos de contacto</h2>
+            <div class="container">
+                <h2>Datos de contacto</h2>
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">Datos de contacto</a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                         <form>
-                                <!-- full-name input-->
-                                <div class="form-group">
-                                    <label class="control-label">Nombre completo</label>
-                                    <div class="controls">
-                                        <input id="full-name" name="full-name" type="text" placeholder=""
-                                        class="form-control">
-                                        <p class="help-block">Nombre completo del paciente</p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">Datos de contacto</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                             <form>
+                                    <!-- full-name input-->
+                                    <div class="form-group">
+                                        <label class="control-label">Nombre completo</label>
+                                        <div class="controls">
+                                            <input id="full-name" name="full-name" type="text" placeholder=""
+                                            class="form-control">
+                                            <p class="help-block">Nombre completo del paciente</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- address-line1 input-->
-                                <div class="form-group">
-                                    <label class="control-label">Edad</label>
-                                    <div class="controls">
-                                        <input id="address-line1" name="address-line1" type="text" placeholder=""
-                                        class="form-control">
+                                    <!-- address-line2 input-->
+                                    <div class="form-group">
+                                        <label class="control-label">Genero</label>
+                                        <select class="form-control">
+                                        <option selected="selected"> - Seleccionar -</option>
+                                          <option>Femenino</option>
+                                          <option>Masculino</option>
+                                        </select>
                                     </div>
-                                </div>
-                                <!-- address-line2 input-->
-                                <div class="form-group">
-                                    <label class="control-label">Genero</label>
-                                    <div class="controls">
-                                        <input id="address-line2" name="address-line2" type="text" placeholder=""
-                                        class="form-control">
+                                    <!-- edad input-->
+                                    <div class="form-group">
+                                        <label class="control-label">Edad</label>
+                                        <div class="controls">
+                                            <input id="edad" name="edad" type="number" placeholder=""
+                                            class="form-control">
+                                        </div>
                                     </div>
-                                </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Dirección</a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                         <a href="#" class="btn btn-danger" style="width: 100%;" data-toggle="modal" data-target="#googleMap"> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Usar su ubicación actual</a>
-                         <br>
-                         <form>
-                                <!-- address-line1 input-->
-                                <div class="form-group">
-                                    <label class="control-label">Calle y número</label>
-                                    <div class="controls">
-                                        <input id="address-line1" name="address-line1" type="text" placeholder="Calle y número"
-                                        class="form-control">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Dirección</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                             <a href="#" class="btn btn-danger" style="width: 100%;" data-toggle="modal" data-target="#googleMap"> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Usar su ubicación actual</a>
+                             <br>
+                             <form>
+                                    <!-- address-line1 input-->
+                                    <div class="form-group">
+                                        <label class="control-label">Calle y número</label>
+                                        <div class="controls">
+                                            <input id="address-line1" name="address-line1" type="text" placeholder="Calle y número"
+                                            class="form-control">
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- address-line2 input-->
-                                <div class="form-group">
-                                    <label class="control-label">Colonia</label>
-                                    <div class="controls">
-                                        <input id="address-line2" name="address-line2" type="text" placeholder="Colonia"
-                                        class="form-control">
+                                    <!-- address-line2 input-->
+                                    <div class="form-group">
+                                        <label class="control-label">Colonia</label>
+                                        <div class="controls">
+                                            <input id="address-line2" name="address-line2" type="text" placeholder="Colonia"
+                                            class="form-control">
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- city input-->
-                                <div class="form-group">
-                                    <label class="control-label">Ciudad</label>
-                                    <div class="controls">
-                                        <input id="city" name="city" type="text" placeholder="Ciudad" class="form-control">
-                                        <p class="help-block"></p>
+                                    <!-- city input-->
+                                    <div class="form-group">
+                                        <label class="control-label">Ciudad</label>
+                                        <div class="controls">
+                                            <input id="city" name="city" type="text" placeholder="Ciudad" class="form-control">
+                                            <p class="help-block"></p>
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- postal-code input-->
-                                <div class="form-group">
-                                    <label class="control-label">Código postal</label>
-                                    <div class="controls">
-                                        <input id="postal-code" name="postal-code" type="text" placeholder="Código postal"
-                                        class="form-control">
-                                        <p class="help-block"></p>
+                                    <!-- postal-code input-->
+                                    <div class="form-group">
+                                        <label class="control-label">Código postal</label>
+                                        <div class="controls">
+                                            <input id="postal-code" name="postal-code" type="text" placeholder="Código postal"
+                                            class="form-control">
+                                            <p class="help-block"></p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox"> Guardar esta dirección
-                                    </label>
-                                  </div>
-                        </form>
+                                    <div class="checkbox">
+                                        <label>
+                                          <input type="checkbox"> Guardar esta dirección
+                                        </label>
+                                      </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
+                            
             </div>
-                        
-        </div>
         </div>
 
         <ul class="list-unstyled list-inline pull-right">
@@ -177,13 +178,43 @@
 
 
    <div id="menu2" class="tab-pane fade">
-    <h3>Menu 2</h3>
-    <p>Some content in menu 2.</p>
+    <div class="panel panel-default">
+    <br>
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">Fecha de visita</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                         <form>
+                            <!-- full-name input-->
+                            <div class="form-group col-xs-6">
+                                <label class="control-label">Día</label>
+                                <div class="controls">
+                                    <input id="dia" name="dia" type="date" placeholder="05/25/2017"
+                                    class="form-control">
+                                </div>
+                            </div>
+                            <!-- address-line2 input-->
+                            <div class="form-group col-xs-6">
+                                <label class="control-label">Hora</label>
+                                <div class="controls">
+                                    <input id="hora" name="hora" type="time" placeholder="5:30 PM"
+                                    class="form-control">
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
     <ul class="list-unstyled list-inline pull-right">
             <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i> Regresar</button></li>
             <li><button type="button" class="btn btn-info next-step">Siguiente <i class="fa fa-chevron-right"></i></button></li>
         </ul>
    </div>
+
+
     <div id="menu3" class="tab-pane fade">
         <div class="container">
         <div class="row">
@@ -413,8 +444,8 @@
 
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary gps" data-dismiss="modal">Confirmar</button>
+                <button type="button" class="btn btn-default gps-cancel" data-dismiss="modal">Cancelar</button>
               </div>
             </div>
           </div>
@@ -427,5 +458,20 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/compra.js"></script>
+
+    <script>
+    $(".gps").click(function() {
+        $("#address-line1").val("Calle Benito Juárez 1102").prop('disabled', true);
+        $("#address-line2").val("Centro").prop('disabled', true);
+        $("#city").val("Monterrey").prop('disabled', true);
+        $("#postal-code").val("64000").prop('disabled', true);
+    });
+    $(".gps-cancel").click(function() {
+        $("#address-line1").val("").prop('disabled', false);
+        $("#address-line2").val("").prop('disabled', false);
+        $("#city").val("").prop('disabled', false);
+        $("#postal-code").val("").prop('disabled', false);
+    });
+    </script>
 </body>
 </html>
